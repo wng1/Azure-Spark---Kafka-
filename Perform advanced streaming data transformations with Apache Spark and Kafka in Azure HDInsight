@@ -1,0 +1,6 @@
+Real-time data analytics pipelines and applications on the cloud using Azure HDInsight with Apache Kafka and Apache Spark. 
+
+Streaming real-time to downstream systems, replicating data so there is no single point of failure, and creating a queue of ordered data. Spark is a parallel processing system that takes the data, transform and process
+accordignly from the continuous stream of data. Through a batch, or combination of different approaches.
+
+https://learn.microsoft.com/en-gb/training/modules/perform-advanced-streaming-data-transformations-with-spark-kafka/2-use-hdinsight

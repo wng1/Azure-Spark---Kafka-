@@ -51,4 +51,19 @@ val stockDf = stockFlatDf.withColumn("time", from_unixtime($"time"/1000))
    .start()
    .awaitTermination(30000)
 )
-   
+
+##Collect all values for a stock
+
+(stockDf.groupBy(
+  window($"time", "4 seconds"),
+  $"symbol"
+  ).agg(collect_list($"price"))
+  .writeStream
+  .format("console")
+  .outputMode("complete")
+  .start()
+  .awaitTermination(30000)
+
+##https://learn.microsoft.com/en-gb/training/modules/perform-advanced-streaming-data-transformations-with-spark-kafka/8-exercise-stream-kafka-data-to-jupyter-notebook-window-data
+
+##Replicata to secondary cluster

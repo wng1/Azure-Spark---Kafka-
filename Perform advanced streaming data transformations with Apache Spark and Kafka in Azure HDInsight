@@ -4,3 +4,5 @@ Streaming real-time to downstream systems, replicating data so there is no singl
 accordignly from the continuous stream of data. Through a batch, or combination of different approaches.
 
 https://learn.microsoft.com/en-gb/training/modules/perform-advanced-streaming-data-transformations-with-spark-kafka/2-use-hdinsight
+https://learn.microsoft.com/en-gb/training/modules/perform-advanced-streaming-data-transformations-with-spark-kafka/4-describe-spark-structured-streaming
+
